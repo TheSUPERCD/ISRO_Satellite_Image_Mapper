@@ -1,0 +1,1 @@
+This folder contains images of other categories present in the satellite image for training.
