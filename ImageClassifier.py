@@ -59,6 +59,6 @@ for i in range(initial_i, ynum-1):
             break
         picTag += 1
     if key == '':
-        break        
+        break
 
 print('Total Number of Images Written : %d' % picTag)
