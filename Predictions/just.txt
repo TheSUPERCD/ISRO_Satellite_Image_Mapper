@@ -1,0 +1,17 @@
+                if satImg[ystart + boxSize*i+1, xstart + boxSize*(j-1)+1+k] == 0 and (satImg[ystart + boxSize*i+1+1, xstart + boxSize*(j-1)+1+k] == 255 or satImg[ystart + boxSize*i+1-1, xstart + boxSize*(j-1)+1+k] == 255) :
+                    satImg[ystart + boxSize*i+1, xstart + boxSize*(j-1)+1+k] = 255
+                if satImg[ystart + boxSize*(i+1)+1, xstart + boxSize*(j-1)+1+k] == 0 and (satImg[ystart + boxSize*(i+1)+1+1, xstart + boxSize*(j-1)+1+k] == 255 or satImg[ystart + boxSize*(i+1)+1-1, xstart + boxSize*(j-1)+1+k] == 255):
+                    satImg[ystart + boxSize*(i+1)+1, xstart + boxSize*(j-1)+1+k] = 255
+                if satImg[ystart + boxSize*i+1 + k, xstart + boxSize*(j-1)+1] == 0 and (satImg[ystart + boxSize*i+1 + k, xstart + boxSize*(j-1)+1+1] == 255 or satImg[ystart + boxSize*i+1 + k, xstart + boxSize*(j-1)+1-1] == 255):
+                    satImg[ystart + boxSize*i+1 + k, xstart + boxSize*(j-1)+1] = 255
+                if satImg[ystart + boxSize*i+1 + k, xstart + boxSize*j+1] == 0 and (satImg[ystart + boxSize*i+1 + k, xstart + boxSize*j+1+1] == 255 or satImg[ystart + boxSize*i+1 + k, xstart + boxSize*j+1-1] == 255):
+                    satImg[ystart + boxSize*i+1 + k, xstart + boxSize*j+1] = 255
+                
+                if satImg[ystart + boxSize*i-1, xstart + boxSize*(j-1)-1+k] == 0 and (satImg[ystart + boxSize*i-1+1, xstart + boxSize*(j-1)-1+k] == 255 or satImg[ystart + boxSize*i-1-1, xstart + boxSize*(j-1)-1+k] == 255) :
+                    satImg[ystart + boxSize*i-1, xstart + boxSize*(j-1)-1+k] = 255
+                if satImg[ystart + boxSize*(i+1)-1, xstart + boxSize*(j-1)-1+k] == 0 and (satImg[ystart + boxSize*(i+1)-1+1, xstart + boxSize*(j-1)-1+k] == 255 or satImg[ystart + boxSize*(i+1)-1-1, xstart + boxSize*(j-1)-1+k] == 255):
+                    satImg[ystart + boxSize*(i+1)-1, xstart + boxSize*(j-1)-1+k] = 255
+                if satImg[ystart + boxSize*i-1 + k, xstart + boxSize*(j-1)-1] == 0 and (satImg[ystart + boxSize*i-1 + k, xstart + boxSize*(j-1)-1+1] == 255 or satImg[ystart + boxSize*i-1 + k, xstart + boxSize*(j-1)-1-1] == 255):
+                    satImg[ystart + boxSize*i-1 + k, xstart + boxSize*(j-1)-1] = 255
+                if satImg[ystart + boxSize*i-1 + k, xstart + boxSize*j-1] == 0 and (satImg[ystart + boxSize*i-1 + k, xstart + boxSize*j-1+1] == 255 or satImg[ystart + boxSize*i-1 + k, xstart + boxSize*j-1-1] == 255):
+                    satImg[ystart + boxSize*i-1 + k, xstart + boxSize*j-1] = 255
